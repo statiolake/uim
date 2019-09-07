@@ -14,7 +14,7 @@ SCM_FILES = plugin.scm im.scm im-custom.scm lazy-load.scm init.scm \
  uim-sh.scm editline.scm custom.scm custom-rt.scm \
  uim-help.scm \
  direct.scm \
- rk.scm \
+ rk.scm rk-utf8.scm \
  generic.scm generic-custom.scm generic-key-custom.scm \
  generic-predict.scm predict-custom.scm \
  predict-look.scm predict-look-skk.scm predict-sqlite3.scm \
@@ -23,6 +23,8 @@ SCM_FILES = plugin.scm im.scm im-custom.scm lazy-load.scm init.scm \
  xmload.scm \
  japanese.scm japanese-azik.scm japanese-kana.scm \
  japanese-act.scm japanese-kzik.scm japanese-custom.scm \
+ japanese-utf8.scm japanese-azik-utf8.scm \
+ japanese-act-utf8.scm japanese-kzik-utf8.scm japanese-custom-utf8.scm \
  anthy.scm anthy-custom.scm anthy-key-custom.scm \
  anthy-utf8.scm anthy-utf8-custom.scm \
  canna.scm cannav3-socket.scm canna-custom.scm canna-key-custom.scm \

@@ -79,6 +79,17 @@
 		      (%%string-reconstruct! str)))))
 	      (reverse! (string->list s)))))))
 
+(define string-to-list-utf8
+  (lambda (s)
+    (with-char-codec "UTF-8"
+      (lambda ()
+	(map! (lambda (c)
+		(let ((str (list->string (list c))))
+		  (with-char-codec "ISO-8859-1"
+		    (lambda ()
+		      (%%string-reconstruct! str)))))
+	      (reverse! (string->list s)))))))
+
 ;; TODO: replace with symbol-append
 ;;
 ;; Since symbol-append is not yet defined at here, enclose into closure.
